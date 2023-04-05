@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gelato_app/pages/start/start.dart';
 import 'package:gelato_app/routes.dart';
+import 'package:gelato_app/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Gelato',
+      theme: theme(),
       initialRoute: StartApp.routeName,
       routes: routes,
     );

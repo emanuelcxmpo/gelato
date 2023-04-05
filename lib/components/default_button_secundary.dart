@@ -4,8 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import '../constants.dart';
 import '../size_config.dart';
 
-class DefaultButton extends StatelessWidget {
-  const DefaultButton({
+class DefaultButtonSecundary extends StatelessWidget {
+  const DefaultButtonSecundary({
     Key? key,
     this.text,
     this.press,
@@ -20,16 +20,16 @@ class DefaultButton extends StatelessWidget {
       height: getProportionateScreenHeight(56),
       child: TextButton(
         style: TextButton.styleFrom(
-          foregroundColor: gButtonTextColor,
+          foregroundColor: gButtonTextColorSecundary,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-          backgroundColor: gButtonColor,
+          backgroundColor: gButtonColorSecundary,
         ),
         onPressed: press as void Function()?,
         child: Text(
           text!,
           style: TextStyle(
-              color: gTextColor,
+              color: gButtonTextColorSecundary,
               fontWeight: FontWeight.w600,
               fontSize: getProportionateScreenWidth(20)),
         ),

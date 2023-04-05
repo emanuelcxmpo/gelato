@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'constants.dart';
 
 ThemeData theme() {
   return ThemeData(
     scaffoldBackgroundColor: const Color.fromRGBO(242, 233, 216, 1),
-    fontFamily: "Muli",
+    fontFamily: GoogleFonts.inter().fontFamily,
     appBarTheme: appBarTheme(),
     textTheme: textTheme(),
     inputDecorationTheme: inputDecorationTheme(),
@@ -41,12 +42,9 @@ TextTheme textTheme() {
 
 AppBarTheme appBarTheme() {
   return const AppBarTheme(
-    color: Color.fromRGBO(242, 233, 216, 1),
-    elevation: 0,
-    iconTheme: IconThemeData(color: Colors.black),
-    textTheme: TextTheme(
-      headline6: TextStyle(color: Color(0XFF8B8B8B), fontSize: 18),
-    ),
-    systemOverlayStyle: SystemUiOverlayStyle.dark,
-  );
+      color: Color.fromRGBO(242, 233, 216, 1),
+      elevation: 0,
+      iconTheme: IconThemeData(color: Colors.black),
+      titleTextStyle: TextStyle(color: gTextColor, fontSize:20),
+      systemOverlayStyle: SystemUiOverlayStyle.dark);
 }

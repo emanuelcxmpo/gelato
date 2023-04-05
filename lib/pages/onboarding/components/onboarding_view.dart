@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gelato_app/constants.dart';
 
 import '../../../size_config.dart';
 
@@ -14,7 +15,7 @@ class SplashContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        const Spacer(flex: 2),
+        const Spacer(flex: 3),
         Image.asset(
           "assets/images/Logo.png",
           height: getProportionateScreenHeight(100),
@@ -24,7 +25,9 @@ class SplashContent extends StatelessWidget {
           text!,
           textAlign: TextAlign.center,
           style: const TextStyle(
-            fontSize: 18,
+            fontSize: 20,
+            fontWeight: FontWeight.w400,
+            color:gTextColor,
           ),
         ),
         const Spacer(flex: 2),
