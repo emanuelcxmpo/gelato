@@ -12,7 +12,7 @@ class SignUp extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Registrarse"),
       ),
-      body: Body(),
+      body: const Body(),
     );
   }
 }

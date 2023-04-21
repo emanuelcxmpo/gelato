@@ -2,18 +2,15 @@ import 'package:flutter/material.dart';
 
 import 'components/body.dart';
 
-class SignIn extends StatelessWidget {
-  static String routeName = "/sign_in";
+class CompleteProfile extends StatelessWidget {
+  static String routeName = "/complete_profile";
 
-  const SignIn({super.key});
+  const CompleteProfile({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          "Iniciar sesión",
-          textAlign: TextAlign.center,
-        ),
+        title: const Text('Registrarse'),
       ),
       body: const Body(),
     );

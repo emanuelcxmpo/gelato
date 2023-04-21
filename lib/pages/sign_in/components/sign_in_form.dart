@@ -7,6 +7,7 @@ import '../../../constants.dart';
 import '../../../helper/keyboard.dart';
 import '../../../size_config.dart';
 import '../../forgot_password/forgot_password.dart';
+import '../../login_success/login_success.dart';
 
 class SignForm extends StatefulWidget {
   const SignForm({super.key});
@@ -50,7 +51,7 @@ class _SignFormState extends State<SignForm> {
             children: [
               Checkbox(
                 value: remember,
-                activeColor: gButtonColor,
+                activeColor: gButtonColorSecundary,
                 onChanged: (value) {
                   setState(() {
                     remember = value;
@@ -78,7 +79,7 @@ class _SignFormState extends State<SignForm> {
                 _formKey.currentState!.save();
                 // if all are valid then go to success screen
                 KeyboardUtil.hideKeyboard(context);
-                // Navigator.pushNamed(context, LoginSuccess.routeName);
+                Navigator.pushNamed(context, LoginSuccess.routeName);
               }
             },
           ),

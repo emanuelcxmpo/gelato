@@ -3,7 +3,7 @@ import 'package:gelato_app/constants.dart';
 import '../../../components/no_account.dart';
 import '../../../components/red_social_card.dart';
 import '../../../size_config.dart';
-import 'sign_form.dart';
+import 'sign_in_form.dart';
 
 class Body extends StatelessWidget {
   const Body({super.key});
@@ -29,7 +29,7 @@ class Body extends StatelessWidget {
                   ),
                 ),
                 const Text(
-                  "Inicia sesión con tu correo elctronico y contraseña \no continua con redes sociales",
+                  "Inicia sesión con tu correo electrónico y contraseña o continua con redes sociales",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 16,
